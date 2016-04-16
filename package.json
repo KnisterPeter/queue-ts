@@ -1,6 +1,6 @@
 {
   "name": "queue-ts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A promise based worker queue with limited concurrency",
   "main": "dist/src/index.js",
   "files": [
