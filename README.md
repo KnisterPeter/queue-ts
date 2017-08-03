@@ -1,5 +1,7 @@
 # queue-ts
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/KnisterPeter/queue-ts.svg)](https://greenkeeper.io/)
+
 [![GitHub license](https://img.shields.io/github/license/KnisterPeter/queue-ts.svg)]()
 [![Travis](https://img.shields.io/travis/KnisterPeter/queue-ts.svg)](https://travis-ci.org/KnisterPeter/queue-ts)
 [![Coveralls branch](https://img.shields.io/coveralls/KnisterPeter/queue-ts/master.svg)](https://coveralls.io/github/KnisterPeter/queue-ts)
