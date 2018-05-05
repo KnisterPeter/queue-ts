@@ -9,7 +9,7 @@
     "src"
   ],
   "scripts": {
-    "linter": "tslint --project ./tsconfig.json --type-check",
+    "linter": "tslint --project ./tsconfig.json",
     "clean": "rimraf dist",
     "prebuild": "npm run clean",
     "build": "tsc --sourceMap",
