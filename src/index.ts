@@ -45,7 +45,7 @@ export class Queue {
     }).then(() => {
       this.workers.push(worker);
       if (this.tasks.length > 0) {
-        this.schedule(this.tasks.pop());
+        this.schedule(this.tasks.shift());
       } else if (this.isEmpty() && this.emptyCallback) {
         this.emptyCallback();
       }
