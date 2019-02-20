@@ -5,7 +5,7 @@
 [![Coveralls branch](https://img.shields.io/coveralls/KnisterPeter/queue-ts/master.svg)](https://coveralls.io/github/KnisterPeter/queue-ts)
 [![npm](https://img.shields.io/npm/v/queue-ts.svg)](https://www.npmjs.com/package/queue-ts)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Greenkeeper badge](https://badges.greenkeeper.io/KnisterPeter/queue-ts.svg)](https://greenkeeper.io/)
+[![renovate badge](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovateapp.com/)
 
 A promise based worker queue with limited concurrency.
 
