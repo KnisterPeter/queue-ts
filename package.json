@@ -11,17 +11,17 @@
   "scripts": {
     "linter": "tslint --project ./tsconfig.json",
     "clean": "rimraf dist",
-    "prebuild": "npm run clean",
+    "prebuild": "yarn clean",
     "build": "tsc --sourceMap",
-    "pretest": "npm run build",
-    "test": "mocha --require source-map-support/register --recursive dist/test",
+    "pretest": "yarn build",
+    "test": "jest",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w",
-    "preversion": "npm test",
-    "version": "npm run build && conventional-changelog -p angular -v -r 0 > CHANGELOG.md && git add -A .",
+    "preversion": "yarn test",
+    "version": "yarn build && conventional-changelog -p angular -v -r 0 > CHANGELOG.md && git add -A .",
     "postversion": "git push && git push --tags",
-    "prepublish": "not-in-install && npm run build || echo 'In install cycle, skipping prepublish'",
-    "precoverage": "npm run clean && tsc --inlineSourceMap",
-    "coverage": "nyc --reporter lcov ./node_modules/.bin/mocha dist/test/"
+    "prepublish": "not-in-install && yarn build || echo 'In install cycle, skipping prepublish'",
+    "precoverage": "yarn clean && tsc --inlineSourceMap",
+    "coverage": "codecov"
   },
   "repository": {
     "type": "git",
@@ -34,22 +34,19 @@
   "license": "MIT",
   "devDependencies": {
     "@knisterpeter/standard-tslint": "1.7.1",
-    "chai": "4.1.2",
+    "@types/jest": "24.0.6",
+    "codecov": "3.2.0",
     "conventional-changelog-cli": "1.3.22",
-    "coveralls": "3.0.1",
     "cz-conventional-changelog": "2.1.0",
     "in-publish": "2.0.0",
-    "mocha": "5.2.0",
-    "nyc": "13.3.0",
+    "jest": "24.1.0",
     "rimraf": "2.6.3",
     "source-map-support": "0.5.6",
+    "ts-jest": "24.0.0",
     "tslint": "5.9.0",
-    "typescript": "2.6.2"
+    "typescript": "3.3.3"
   },
   "dependencies": {},
-  "publishConfig": {
-    "tag": "next"
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
@@ -60,6 +57,18 @@
       "node_modules",
       "coverage",
       "dist/test"
+    ]
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**"
     ]
   },
   "renovate": {

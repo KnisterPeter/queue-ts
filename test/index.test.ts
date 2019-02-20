@@ -1,5 +1,3 @@
-// tslint:disable-next-line:no-implicit-dependencies
-import { assert } from 'chai';
 import { Queue } from '../src/index';
 
 describe('A queue', () => {
@@ -10,14 +8,14 @@ describe('A queue', () => {
   });
 
   it('should be empty after creation', () => {
-    assert.isTrue(queue.isEmpty());
+    expect(queue.isEmpty()).toBeTruthy();
   });
 
   it('should have available workers after creation', () => {
-    assert.isTrue(queue.isAvailable());
+    expect(queue.isAvailable()).toBeTruthy();
   });
 
-  it('should execute each task', (done: MochaDone) => {
+  it('should execute each task', (done: jest.DoneCallback) => {
     let n = 0;
     function inc(): void {
       n++;
@@ -31,9 +29,9 @@ describe('A queue', () => {
     }
   });
 
-  it('should call back when done', (done: MochaDone) => {
+  it('should call back when done', (done: jest.DoneCallback) => {
     queue.onEmpty(() => {
-      assert.isTrue(queue.isEmpty());
+      expect(queue.isEmpty()).toBeTruthy();
       done();
     });
     for (let i = 0; i < 2; i++) {

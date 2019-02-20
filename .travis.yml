@@ -2,6 +2,7 @@ sudo: false
 language: node_js
 node_js:
 - stable
+- '10'
 - '8'
 - '6'
 matrix:
@@ -9,15 +10,14 @@ matrix:
 branches:
   only:
     - master
-    - /^greenkeeper-.*$/
-    - /^greenkeeper/.*$/
 cache:
+  yarn: true
   directories:
     - node_modules
 notifications:
   email:
     on_success: never
 
-before_script: 'npm run linter'
-script: 'npm run test'
-after_script: 'npm run coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls'
+before_script: 'yarn linter'
+script: 'yarn test --runInBand'
+after_script: 'yarn coverage'
