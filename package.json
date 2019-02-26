@@ -34,7 +34,7 @@
   "license": "MIT",
   "devDependencies": {
     "@knisterpeter/standard-tslint": "1.7.2",
-    "@types/jest": "24.0.7",
+    "@types/jest": "24.0.8",
     "codecov": "3.2.0",
     "conventional-changelog-cli": "2.0.12",
     "cz-conventional-changelog": "2.1.0",
