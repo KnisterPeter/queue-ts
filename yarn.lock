@@ -890,13 +890,13 @@ conventional-changelog-atom@^2.0.1:
   dependencies:
     q "^1.5.1"
 
-conventional-changelog-cli@2.0.17:
-  version "2.0.17"
-  resolved "https://registry.yarnpkg.com/conventional-changelog-cli/-/conventional-changelog-cli-2.0.17.tgz#ec3f149dfc918903ae925b7a375d5b638fb45741"
-  integrity sha512-IQUS08TTrLxAd0Le3THPz8xFFe1kVmSBOcnfe8RGpi+io3ALnMT4uw0snmP3Cb9lgnHXg0NcjQyVsE+jJmHtrw==
+conventional-changelog-cli@2.0.21:
+  version "2.0.21"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-cli/-/conventional-changelog-cli-2.0.21.tgz#7469ddd663a8e68967b6d8c9c2cf207d1d7462f7"
+  integrity sha512-gMT1XvSVmo9Np1WUXz8Mvt3K+OtzR+Xu13z0jq/3qsXBbLuYc2/oaUXVr68r3fYOL8E9dN2uvX7Hc7RkeWvRVA==
   dependencies:
     add-stream "^1.0.0"
-    conventional-changelog "^3.1.4"
+    conventional-changelog "^3.1.8"
     lodash "^4.2.1"
     meow "^4.0.0"
     tempfile "^1.1.1"
@@ -992,7 +992,7 @@ conventional-changelog-writer@^4.0.5:
     split "^1.0.0"
     through2 "^3.0.0"
 
-conventional-changelog@^3.1.4:
+conventional-changelog@^3.1.8:
   version "3.1.8"
   resolved "https://registry.yarnpkg.com/conventional-changelog/-/conventional-changelog-3.1.8.tgz#091382b5a0820bf8ec8e75ad2664a3688c31b07d"
   integrity sha512-fb3/DOLLrQdNqN0yYn/lT6HcNsAa9A+VTDBqlZBMQcEPPIeJIMI+DBs3yu+eiYOLi22w9oShq3nn/zN6qm1Hmw==
