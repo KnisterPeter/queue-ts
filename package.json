@@ -36,7 +36,7 @@
     "@knisterpeter/standard-tslint": "1.7.2",
     "@types/jest": "26.0.9",
     "codecov": "3.7.2",
-    "conventional-changelog-cli": "2.0.34",
+    "conventional-changelog-cli": "2.1.0",
     "cz-conventional-changelog": "3.2.0",
     "in-publish": "2.0.1",
     "jest": "26.3.0",
