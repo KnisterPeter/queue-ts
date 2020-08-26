@@ -37,7 +37,7 @@
     "@types/jest": "26.0.10",
     "codecov": "3.7.2",
     "conventional-changelog-cli": "2.1.0",
-    "cz-conventional-changelog": "3.2.1",
+    "cz-conventional-changelog": "3.3.0",
     "in-publish": "2.0.1",
     "jest": "26.4.2",
     "rimraf": "3.0.2",
